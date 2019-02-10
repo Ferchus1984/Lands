@@ -10,7 +10,7 @@
 
         <ResourceDictionary>
             <infra:InstaceLocator x:Key="Locator"/>
-
+            <!-- Objeto clase infra que es de la clase infralocator y a esa propiedad se llama Locator  -->
         </ResourceDictionary>
 
 
