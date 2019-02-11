@@ -16,11 +16,7 @@
                 Text ="Fraudi_Quinela">
             </Label>-->
 
-                <Image
-
-                Source="FQ2.png"
-     
-                >
+                <Image Source="FQ2.png">
                 </Image>
 
                 <Grid
@@ -30,9 +26,9 @@
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
                     <Label 
-                Grid.Row="0"
-                Grid.Column="0"
-                Text ="Email"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text ="Email"
                         VerticalOptions="Center">
                     </Label>
 
@@ -59,10 +55,10 @@
                     </Entry>
 
                 </Grid>
- <ActivityIndicator
+                <ActivityIndicator
      IsRunning="{Binding IsRunning, Mode=TwoWay}"
      VerticalOptions="CenterAndExpand">
-     
+
                 </ActivityIndicator>
                 <StackLayout
                     Margin="10,0"
@@ -130,6 +126,6 @@
             </StackLayout>
 
         </ScrollView>
-  
+
     </ContentPage.Content>
 </ContentPage>

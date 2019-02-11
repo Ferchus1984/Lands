@@ -1,7 +1,11 @@
 ﻿namespace Lands.ViewModels
 {
-using System.Windows.Input;
-	public class LoginViewModel 
+    using GalaSoft.MvvmLight.Command;
+    using System;
+    using System.Windows.Input;
+    using Xamarin.Forms;
+
+    public class LoginViewModel 
 	{
         #region Properties
         public string Email
@@ -40,12 +44,27 @@ using System.Windows.Input;
         #region Commands
         public ICommand LoginCommand
         {
-            get;
-            set;
+            get
+            {
+                return new RelayCommand(Login);
+            }
+        }
+
+        private async void Login()
+        {
+
+            if (string.IsNullOrEmpty(this.Email))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "",
+                    "",
+                    "");
+            }
+
         }
         #endregion
 
-      
+
 
 
 
